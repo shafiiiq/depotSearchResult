@@ -22,3 +22,25 @@ window.addEventListener('scroll', function () {
     document.querySelector('.search-history').style.display = 'none';
     document.getElementById('search-input').style.border = '2px solid #272a34'
 });
+
+document.getElementById('categories-drop-control').addEventListener('click', function() {
+    var dropCategories = document.querySelector('.drop-categories');
+    if (dropCategories.style.display === 'flex') {
+        dropCategories.style.display = 'none';
+        document.getElementById('categories-drop-control').innerHTML = 'keyboard_arrow_down'
+    } else {
+        dropCategories.style.display = 'flex';
+        document.getElementById('categories-drop-control').innerHTML = 'keyboard_arrow_up'
+    }
+});
+
+document.getElementById('gender-drop-control').addEventListener('click', function() {
+    var dropCategories = document.querySelector('.drop-gender');
+    if (dropCategories.style.display === 'flex') {
+        dropCategories.style.display = 'none';
+        document.getElementById('gender-drop-control').innerHTML = 'keyboard_arrow_down'
+    } else {
+        dropCategories.style.display = 'flex';
+        document.getElementById('gender-drop-control').innerHTML = 'keyboard_arrow_up'
+    }
+});

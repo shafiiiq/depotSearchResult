@@ -16,18 +16,6 @@ body {
   overflow: hidden;
 }
 
-body::-webkit-scrollbar {
-  width: 6px;
-}
-
-body::-webkit-scrollbar-track {
-  background-color: var(--black-color);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: var(--white-color);
-}
-
 section {
   height: 100vh;
 }
@@ -259,6 +247,10 @@ section {
   background-color: var(--accent-red);
 }
 
+.text-bg {
+  background-color: var(--text-color);
+}
+
 .red-clr {
   color: var(--accent-red);
 }
@@ -412,11 +404,12 @@ section#results {
   grid-template-columns: 15rem auto;
   transition: all 0.3 ease;
   cursor: pointer;
+  border: 1px solid rgb(115, 115, 115);
 }
 
 .wrapper .result-items  .item img {
   width: 15rem;
-  height: 15rem;
+  height: 14.87rem;
 }
 
 .wrapper .result-items .item:hover {
@@ -438,22 +431,58 @@ section#results {
 /* -------------------------------------------- */
 
 /* filer aside section starts  */
+.price-height {
+  height: 1.7rem;
+  padding-left: 0.2rem;
+  border: 1px solid rgb(150, 150, 150);
+}
 
+.filter-aside {
+  max-height: calc(100vh - 6rem);
+}
 
+.color {
+  height: 1.1rem;
+  width: 1.1rem;
+}
 
+.black {
+  background-color: black;
+  margin-right: 0.2rem;
+}
 
+.white {
+  background-color: rgb(234, 234, 234);
+  margin-right: 0.2rem;
+}
 
+.red {
+  background-color: rgb(207, 13, 13);
+  margin-right: 0.2rem;
+}
 
+.blue {
+  background-color: rgb(18, 80, 212);
+  margin-right: 0.2rem;
+}
 
+.green {
+  background-color: rgb(16, 195, 34);
+  margin-right: 0.2rem;
+}
 
+.color-wrap {
+  max-width: 6rem;
+}
 
+.colors input {
+  width: 1rem;
+}
 
-
-
-
-
-
-
+/* Related contents  */
+img.related {
+  height: 10rem;
+}
 
 
 
